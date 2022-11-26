@@ -203,7 +203,6 @@ body {
   background-color: var(--accent-color);
 
   border: none;
-  cursor: pointer;
 
   min-width: 216px;
   min-height: 50px;
@@ -499,8 +498,9 @@ body {
   align-items: center;
   gap: 10px;
 
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 28px;
 
   font-weight: 700;
   font-size: 16px;
@@ -650,6 +650,8 @@ body {
 .modal-window {
   width: 528px;
   min-height: 581px;
+  padding: 40px;
+
   background-color: var(--first-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -692,4 +694,56 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0px 42px;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--title-text-color);
+}
+
+.modal-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--first-text-color);
+
+  margin-bottom: 4px;
+}
+
+.modal-input-wrap {
+  position: relative;
+  margin-bottom: 10px;
 }
