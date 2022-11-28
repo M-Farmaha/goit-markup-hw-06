@@ -837,10 +837,6 @@ body {
   transition-timing-function: var(--main-transition-timing-function);
 }
 
-.modal-input-privacy:focus + .modal-label-privacy > .check-icon-wrap {
-  border-color: var(--accent-color);
-}
-
 .modal-input-privacy:checked + .modal-label-privacy > .check-icon-wrap {
   background-color: var(--accent-color);
   color: var(--first-bg-color);
@@ -849,4 +845,19 @@ body {
 
 .modal-privacy-link {
   color: var(--accent-color);
+}
+
+.modal-input-privacy {
+  position: absolute;
+  left: 67px;
+  bottom: 126px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

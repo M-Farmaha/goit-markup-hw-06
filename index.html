@@ -390,8 +390,7 @@
         <div class="footer-wrap form-wrap">
           <p class="footer-join">Підпишіться на розсилку</p>
           <form class="footer-form" name="footer-form">
-            <label class="visually-hidden" for="user-email"></label>
-            <input class="footer-email" type="email" name="email" id="user-email" placeholder="E-mail" />
+            <input class="footer-email" type="email" name="email" placeholder="E-mail" aria-label="E-mail" />
             <button class="footer-form-btn" type="submit">
               Підписатися
               <svg class="icon-send" width="24" height="24">
@@ -447,7 +446,7 @@
           <label class="modal-label" for="modal-comment">Коментар</label>
           <textarea class="modal-input comment" name="comment" id="modal-comment" placeholder="Введіть текст"></textarea>
 
-          <input class="modal-input-privacy visually-hidden" type="checkbox" name="modal-privacy" id="modal-privacy" />
+          <input class="modal-input-privacy" type="checkbox" name="modal-privacy" id="modal-privacy" required />
           <label class="modal-label-privacy" for="modal-privacy">
             <span class="check-icon-wrap">
               <svg class="check-icon" width="16" height="15">
